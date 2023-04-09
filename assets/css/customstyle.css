@@ -1,0 +1,44 @@
+/* default css */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 59%;
+    }
+
+}
+
+
+/* css for semantic elements */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {}
+
+nav {
+    background-color:#0062b9 ;
+}
+
+#knowledge {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* css for contact me section */
+#contactme {
+    display: flex;
+    flex-wrap: wrap;
+}
