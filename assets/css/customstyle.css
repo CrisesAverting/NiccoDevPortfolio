@@ -1,42 +1,88 @@
 /* default css */
-* {
-    box-sizing: border-box;
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit
 }
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-@media only screen and (max-width: 75em) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 59%;
+        background: red;
     }
 }
 
-@media only screen and (max-width: 56.25em) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     html {
-        font-size: 56%;
+        background: green;
     }
 }
 
-@media only screen and (min-width: 112.5em) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     html {
-        font-size: 65%;
+        background: blue;
     }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        background: orange;
+    }
+}
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        background: pink;
+    }
+}
 
 /* css for semantic elements */
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif
 }
 
-header {}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.2rem 3rem;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 100%;
+}
+
+section {
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    padding: 10px;
+}
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #0062b9;
+}
+
+li {
+    list-style: none
 }
 
 #knowledge {
