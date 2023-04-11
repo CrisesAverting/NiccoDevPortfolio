@@ -6,6 +6,12 @@
     html {
         background: red;
     }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -36,10 +42,14 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* css for semantic elements */
 body {
     width: 90%;
-    box-sizing: border-box;
+    box-sizing: content-box;
     position: relative;
     margin: 10px;
     line-height: 1.5;
@@ -59,13 +69,14 @@ header {
     display: inline-block;
     font-size: 1.6rem;
     color: #333;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-weight: 700;
     width: 100%;
 }
 
 /* control the location of the picture */
 #profilepic {
+    float: left;
     height: 105px;
     width: 110px;
     border: 2px;
@@ -75,7 +86,9 @@ header {
 }
 
 #aboutcontent {
+    float: right;
     display: flex;
+
 }
 
 .header_content {
@@ -84,35 +97,40 @@ header {
 }
 
 nav {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    /* align-items: center; */
     background-color: #0062b9;
 }
 
 ul {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
 }
-/* h1 {
-    
-} */
-#titlecontainer{
+
+#titlecontainer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
+
 #mainwrapper {
     width: 100%;
 }
+
 .sectionwrapper {
     display: flex;
 }
+
 section {
     display: flex;
     flex-direction: row;
     border: 2px;
-    border-width: 2px;
+    /* border-width: 2px; */
     border-style: solid;
     border-color: #333;
 }
@@ -124,23 +142,46 @@ section {
 }
 
 li {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     list-style: none
 }
 
+/* css for About me section */
+#about {
+    width: 100%;
+}
+
+/* css for the knowledge section */
 #knowledge {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* css for the portfolio section */
 #portfolio {
     display: flex;
     flex-wrap: wrap;
 }
 
+#project1 {
+    width: 80%;
+}
+
 /* css for contact me section */
 #contactme {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#pro1 {
     display: flex;
     flex-wrap: wrap;
+}
+
+#pro1img {
+    align-items: center;
+    width: 400px;
+    height: 300px;
 }
