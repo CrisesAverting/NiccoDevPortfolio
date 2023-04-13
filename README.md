@@ -15,14 +15,14 @@ This project is a code refactor of a webpage to improve accessability, maintaina
 
 ## Links
 
-<a href="https://crisesaverting.github.io/code-refractor-01/">Deployed</a>
+<a href="https://crisesaverting.github.io/NiccoDevPortfolio/">Deployed</a>
 
 ## Purpose
 
 This is a portfolio webesite 
 ## Screenshots
 
-<img src="./assets/images/readmescreenshot.png">
+
 
 ## Technologies
 
