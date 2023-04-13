@@ -43,7 +43,8 @@
 
                     <div id="aboutcontent">
 
-                        <img src="./assets/images/profilepic.jpg" alt="Picture of a person" id="profilepic"> My name
+                        <img src="./assets/images/profilepic.jpg" alt="Picture of a person" id="profilepic">
+                        <h2>About Me</h2> My name
                         is
                         Nicco, I'm a graduate from the full stack development bootcamp at Columbia University
                         Engineering.
@@ -82,51 +83,71 @@
             </div>
             <div>
                 <section id="portfolio">
+                    <h2>Projects</h2>
                     <ul class="projects">
                         <!-- full width project -->
                         <li class="item1">
-                            <a href="link to code refrator"><img src="./assets/images/refactor.png"
-                                    alt="screenshot of first project" id=primeimg>Project 1</a>
+                            <figure>
+                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                        alt="screenshot of first project" alt="image of first project" id=primeimg></a>
+                                <figcaption>Code Refactor</figcaption>
+                            </figure>
                         </li>
                         <!-- secondary projects -->
                         <li class="item2">
-                            <a href="link to "><img src="./assets/images/onair.jpg" id=secimg>Project 2</a>
+                            <figure>
+                                <a href="link to "><img src="./assets/images/onair.jpg" alt="image of second project an on air sign" id=secimg></a>
+                                <figcaption>on air sign</figcaption>
+                            </figure>
+
                         </li>
+
                         <li class="item3">
-                            <a href="link to code refrator"><img src="./assets/images/passGen.png" alt="screenshot of first project" id=secimg>Project 3</a>
+                            <figure>
+                                <a href="link to code refrator"><img src="./assets/images/passGen.png"
+                                        alt="screenshot of first project" alt="image of 3rd project a password generator" id=secimg></a>
+                                <figcaption>Password generator</figcaption>
+                            </figure>
                         </li>
                         <li class="item4">
-                            <a href="link to code refrator"><img src="./assets/images/refactor.png" alt="screenshot of first project" id=secimg>Project 4</a>
+                            <figure>
+                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                        alt="screenshot of first project" alt="" id=secimg></a>
+                                <figcaption>Coding quiz</figcaption>
+                            </figure>
                         </li>
                         <li class="item5">
-                            <a href="link to code refrator"><img src="./assets/images/refactor.png" alt="screenshot of first project" id=secimg>Project 5</a>
+                            <figure>
+                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                        alt="screenshot of first project" alt="" id=secimg></a>
+                                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                            </figure>
                         </li>
                     </ul>
                 </section>
             </div>
             <div class="sectionwrapper">
                 <section id="contactme">
-                    <p>Morbi quis ante consequat, interdum diam vel, pretium massa. Fusce finibus, dolor id scelerisque
-                        fermentum,
-                        leo velit
-                        venenatis elit, quis ornare massa tortor at diam. Vestibulum cursus tristique dui nec tempus.
-                        Etiam
-                        finibus
-                        feugiat
-                        libero, eget pellentesque sapien tempus eu. Praesent sed auctor justo. Pellentesque tempus,
-                        risus a
-                        porta
-                        sollicitudin,
-                        est diam efficitur sapien, in finibus quam leo ac orci. Nullam blandit, ex a ullamcorper
-                        aliquam,
-                        massa
-                        massa hendrerit
-                        nibh, vitae iaculis sapien nunc vitae ex. Praesent sed lectus elementum, faucibus odio eu,
-                        lobortis
-                        quam.
-                        Praesent
-                        venenatis ullamcorper nulla sit amet porttitor.
-                    </p>
+                    <h3>Contact Form</h3>
+
+                    <div class="form">
+                        <form action="/action_page.">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="enter a contact email">
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
+                            <input type="button" value="Submit">
+                        </form>
+                    </div>
                 </section>
             </div>
 
