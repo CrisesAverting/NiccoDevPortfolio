@@ -37,9 +37,14 @@ figcaption{
     color: white;
 }
 section {
+    border-top: 2px;
+    border-top-color: black;
+    border-top-style: solid;
     padding: 10px;
     background-color: grey;
+    min-height: 500px;
 }
+
 
 /* Setting header static when scrolling */
 .header {
