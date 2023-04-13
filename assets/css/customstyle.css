@@ -1,187 +1,122 @@
 /* default css */
 
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+img {
+    height: 130px;
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(69, 68, 68);
+    color: #eee;
+    height: 30px;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(69, 68, 68);
+    color: #eee;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
-        background: red;
+        background: rgb(69, 68, 68);
     }
 
     ul {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        align-items: center;
+        background: rgb(69, 68, 68);
+    }
+
+    #profilepic {
+        float: left;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    html {
-        background: green;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        background: rgb(69, 68, 68);
     }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    html {
-        background: blue;
+    #projects {
+        display: block;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    html {
-        background: orange;
+    #profilepic {
+        height: 130px;
+        width: 130px;
+        float: left;
     }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    html {
-        background: pink;
+    #primeimg {
+        width: 400px;
+        height: 250px;
     }
-}
+    /* #secimg {
+  
+    } */
 
-html {
-    scroll-behavior: smooth;
-}
+    .projects {
+        display: grid;
+        grid-template-areas:
+            "pro1 pro1"
+            "pro2 pro3"
+            "pro4 pro5"
+    }
 
-/* css for semantic elements */
-body {
-    width: 90%;
-    box-sizing: content-box;
-    position: relative;
-    margin: 10px;
-    line-height: 1.5;
-    font-family: sans-serif;
-    font-family: 'Source Sans Pro', sans-serif
-}
+    .item1 {
+        grid-area: pro1;
+    }
 
-/* css to control the header and its content */
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 2px;
-    border-style: solid;
-    border-color: black;
-    display: inline-block;
-    font-size: 1.6rem;
-    color: #333;
-    /* letter-spacing: 1px; */
-    font-weight: 700;
-    width: 100%;
-}
+    .item2 {
+        grid-area: pro2;
+    }
 
-/* control the location of the picture */
-#profilepic {
-    float: left;
-    height: 105px;
-    width: 110px;
-    border: 2px;
-    margin: 20px;
-    border-style: solid;
-    border-color: black;
-}
+    .item3 {
+        grid-area: pro3;
+    }
 
-#aboutcontent {
-    float: right;
-    display: flex;
+    .item4 {
+        grid-area: pro4;
+    }
 
-}
-
-.header_content {
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    background-color: #0062b9;
-}
-
-ul {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-#titlecontainer {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-}
-
-#mainwrapper {
-    width: 100%;
-}
-
-.sectionwrapper {
-    display: flex;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    border: 2px;
-    /* border-width: 2px; */
-    border-style: solid;
-    border-color: #333;
-}
-
-.linkwrapper {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-}
-
-li {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    list-style: none
-}
-
-/* css for About me section */
-#about {
-    width: 100%;
-}
-
-/* css for the knowledge section */
-#knowledge {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* css for the portfolio section */
-#portfolio {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#project1 {
-    width: 80%;
-}
-
-/* css for contact me section */
-#contactme {
-    flex-wrap: wrap;
-    display: flex;
-}
-
-#pro1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#pro1img {
-    align-items: center;
-    width: 400px;
-    height: 300px;
+    .item5 {
+        grid-area: pro5;
+    }
 }
