@@ -11,7 +11,7 @@
 * [Credits](#credits)
 ## Description
 
-This project is a code refactor of a webpage to improve accessability, maintainance and search engine optimization.
+This is a developer Portfolio for Niccolo Tagiur
 
 ## Links
 
@@ -35,4 +35,3 @@ This is a portfolio webesite
 <img src="https://img.shields.io/badge/license-MIT-blue">
 
 ## Credits
-These materials were developed by the 2U/edX Coding Curriculum Team for use with bootcamp students.
