@@ -22,7 +22,7 @@ This project is a code refactor of a webpage to improve accessability, maintaina
 This is a portfolio webesite 
 ## Screenshots
 
-
+<img src= "./assets/images/crisesaverting.github.io_NiccoDevPortfolio.png">
 
 ## Technologies
 

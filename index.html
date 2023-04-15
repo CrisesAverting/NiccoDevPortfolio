@@ -23,7 +23,7 @@
                     <a href="#knowledge">Knowledge</a>
                 </li>
                 <li class="linkwrapper">
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">Projects</a>
                 </li>
                 <li class="linkwrapper">
                     <a href="#contactme">Contact Me</a>
@@ -35,127 +35,128 @@
 </header>
 
 <body>
-    <section id="mainwrapper">
-        <main>
 
-            <div class="sectionwrapper">
-                <section id="about">
+    <main>
 
-                    <div id="aboutcontent">
 
-                        <img src="./assets/images/profilepic.jpg" alt="Picture of a person" id="profilepic">
-                        <h2>About Me</h2> My name
-                        is
-                        Nicco, I'm a graduate from the full stack development bootcamp at Columbia University
-                        Engineering.
+        <section id="about">
 
-                        Integer placerat tellus a ante auctor, id hendrerit leo efficitur. Maecenas vitae purus ut nisi
-                        mollis
-                        eleifend. Integer
-                        pretium dictum arcu. Proin a malesuada mauris. Curabitur tincidunt nisi id dolor accumsan
-                        ultricies.
+            <div id="aboutcontent">
 
-                    </div>
-                </section>
+                <img src="./assets/images/profilepic.jpg" alt="Picture of a person" id="profilepic">
+                <h2>About Me</h2> My name
+                is
+                Nicco, I'm a graduate from the full stack development bootcamp at Columbia University
+                Engineering.
+
+                Integer placerat tellus a ante auctor, id hendrerit leo efficitur. Maecenas vitae purus ut nisi
+                mollis
+                eleifend. Integer
+                pretium dictum arcu. Proin a malesuada mauris. Curabitur tincidunt nisi id dolor accumsan
+                ultricies.
+
             </div>
+        </section>
+        <div id="knowledge">
 
-            <div class="sectionwrapper">
-                <section id="knowledge">
-                    <h2>Knowledge</h2>
-                    <p>
-                        Integer placerat tellus a ante auctor, id hendrerit leo efficitur. Maecenas vitae purus ut nisi
-                        mollis
-                        eleifend. Integer
-                        pretium dictum arcu. Proin a malesuada mauris. Curabitur tincidunt nisi id dolor accumsan
-                        ultricies.
-                        Cras
-                        tempus lacus
-                        et accumsan ultricies. Maecenas rutrum, nisl at placerat mollis, ante orci molestie dui, et
-                        malesuada orci
-                        lacus eu
-                        magna. Donec eu nisi neque. Suspendisse vitae risus non est sagittis varius sit amet ac lectus.
-                        In
-                        ipsum
-                        lectus,
-                        dignissim sit amet vestibulum id, molestie vel sem.
-                    </p>
-                </section>
+        </div>
+        <section>
+            <h2>Knowledge</h2>
+            <p>
+                Integer placerat tellus a ante auctor, id hendrerit leo efficitur. Maecenas vitae purus ut nisi
+                mollis
+                eleifend. Integer
+                pretium dictum arcu. Proin a malesuada mauris. Curabitur tincidunt nisi id dolor accumsan
+                ultricies.
+                Cras
+                tempus lacus
+                et accumsan ultricies. Maecenas rutrum, nisl at placerat mollis, ante orci molestie dui, et
+                malesuada orci
+                lacus eu
+                magna. Donec eu nisi neque. Suspendisse vitae risus non est sagittis varius sit amet ac lectus.
+                In
+                ipsum
+                lectus,
+                dignissim sit amet vestibulum id, molestie vel sem.
+            </p>
+        </section>
+        </div>
+
+        <section id="portfolio">
+            <h2>Projects</h2>
+            <ul class="projects">
+                <!-- full width project -->
+                <li class="item1">
+                    <figure>
+                        <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                alt="screenshot of first project" alt="image of first project" id=primeimg></a>
+                        <figcaption>Code Refactor</figcaption>
+                    </figure>
+                </li>
+                <!-- secondary projects -->
+                <li class="item2">
+                    <figure>
+                        <a href="link to "><img src="./assets/images/onair.jpg"
+                                alt="image of second project an on air sign" id=secimg></a>
+                        <figcaption>on air sign</figcaption>
+                    </figure>
+
+                </li>
+
+                <li class="item3">
+                    <figure>
+                        <a href="link to code refrator"><img src="./assets/images/passGen.png"
+                                alt="screenshot of first project" alt="image of 3rd project a password generator"
+                                id=secimg></a>
+                        <figcaption>Password generator</figcaption>
+                    </figure>
+                </li>
+                <li class="item4">
+                    <figure>
+                        <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                alt="screenshot of first project" alt="" id=secimg></a>
+                        <figcaption>Coding quiz</figcaption>
+                    </figure>
+                </li>
+                <li class="item5">
+                    <figure>
+                        <a href="link to code refrator"><img src="./assets/images/refactor.png"
+                                alt="screenshot of first project" alt="" id=secimg></a>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        </div>
+
+        <section id="contactme">
+            <h2>Contact Form</h2>
+
+            <div class="form">
+                <form action="/action_page.">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="enter a contact email">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="button" value="Submit">
+                </form>
             </div>
-            <div>
-                <section id="portfolio">
-                    <h2>Projects</h2>
-                    <ul class="projects">
-                        <!-- full width project -->
-                        <li class="item1">
-                            <figure>
-                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
-                                        alt="screenshot of first project" alt="image of first project" id=primeimg></a>
-                                <figcaption>Code Refactor</figcaption>
-                            </figure>
-                        </li>
-                        <!-- secondary projects -->
-                        <li class="item2">
-                            <figure>
-                                <a href="link to "><img src="./assets/images/onair.jpg" alt="image of second project an on air sign" id=secimg></a>
-                                <figcaption>on air sign</figcaption>
-                            </figure>
+        </section>
 
-                        </li>
 
-                        <li class="item3">
-                            <figure>
-                                <a href="link to code refrator"><img src="./assets/images/passGen.png"
-                                        alt="screenshot of first project" alt="image of 3rd project a password generator" id=secimg></a>
-                                <figcaption>Password generator</figcaption>
-                            </figure>
-                        </li>
-                        <li class="item4">
-                            <figure>
-                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
-                                        alt="screenshot of first project" alt="" id=secimg></a>
-                                <figcaption>Coding quiz</figcaption>
-                            </figure>
-                        </li>
-                        <li class="item5">
-                            <figure>
-                                <a href="link to code refrator"><img src="./assets/images/refactor.png"
-                                        alt="screenshot of first project" alt="" id=secimg></a>
-                                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="sectionwrapper">
-                <section id="contactme">
-                    <h2>Contact Form</h2>
-
-                    <div class="form">
-                        <form action="/action_page.">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="enter a contact email">
-
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.."
-                                style="height:200px"></textarea>
-
-                            <input type="button" value="Submit">
-                        </form>
-                    </div>
-                </section>
-            </div>
-
-        </main>
-        <footer>
-            <span>Copyright Niccolo O'Leary-Tagiuri</span>
-        </footer>
-    </section>
+    </main>
+    <footer>
+        <span>Copyright Niccolo O'Leary-Tagiuri</span>
+    </footer>
 </body>
 
 </html>

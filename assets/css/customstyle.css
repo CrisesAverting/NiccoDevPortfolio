@@ -9,6 +9,7 @@ html {
     padding: 0;
     scroll-behavior: smooth;
     padding: 5%;
+    scroll-padding-top: 35px;
 }
 
 body {
@@ -29,10 +30,21 @@ a {
     text-decoration: none;
     color: white;
 }
+/* adjusting the anchor scroll location */
+/* #about{
+    
+        /* padding-top: 85px;
+        margin-top: -40px; */
+    /* }
+/* #knowledge{ */
+        /* padding-top: 85px;
+        margin-top: -40px; 
+    }*/
 
-#about {
-    padding-top: 55px;
-}
+ /* #contactme {
+     padding-top: 85px;
+    margin-top: -40px; 
+}  */
 figcaption{
     color: white;
 }
@@ -40,7 +52,8 @@ section {
     border-top: 2px;
     border-top-color: black;
     border-top-style: solid;
-    padding: 10px;
+    /* padding-top: 85px;
+    margin-top: 40px; */
     background-color: grey;
     min-height: 500px;
 }
@@ -102,9 +115,6 @@ input[type=submit]:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    html {
-        /* background: rgb(69, 68, 68); */
-    }
 
     ul {
         display: flex;
@@ -120,6 +130,10 @@ input[type=submit]:hover {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    html{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
     ul {
         display: flex;
         flex-direction: row;
@@ -139,9 +153,6 @@ input[type=submit]:hover {
         height: 250px;
     }
 
-    /* #secimg {
-  
-    } */
     /* created a project gallery for portfolio */
     .projects {
         display: block;
