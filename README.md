@@ -22,7 +22,7 @@ This is a developer Portfolio for Niccolo Tagiur
 This is a portfolio webesite 
 ## Screenshots
 
-<img src= "./assets/images/crisesaverting.github.io_NiccoDevPortfolio.png">
+<img src= "./assets/images/NiccoDevPortfolio.png">
 
 ## Technologies
 
